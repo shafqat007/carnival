@@ -13,8 +13,8 @@ export const lightTheme = {
         shadow: 'rgba(247, 134, 32, 0.1)' // Shadow color
     },
     fonts: {
-        heading: '"Orbitron", sans-serif',
-        body: '"Inter", sans-serif'
+        heading: '"Space Grotesk", sans-serif',
+        body: "'JetBrains Mono', monospace"
     },
     gradients: {
         primary: 'linear-gradient(135deg, #f78620 0%, #cd2a57 100%)',
@@ -37,8 +37,8 @@ export const darkTheme = {
         shadow: 'rgba(0, 0, 0, 0.3)' // Dark shadow
     },
     fonts: {
-        heading: '"Orbitron", sans-serif',
-        body: '"Inter", sans-serif'
+        heading: '"Space Grotesk", sans-serif',
+        body: "'JetBrains Mono', monospace"
     },
     gradients: {
         primary: 'linear-gradient(135deg, #f78620 0%, #cd2a57 100%)',

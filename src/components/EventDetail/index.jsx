@@ -84,6 +84,8 @@ const EventDetails = styled.div`
     display: flex;
     margin-bottom: 1rem;
     align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
     
     &:last-child {
       margin-bottom: 0;
@@ -91,7 +93,7 @@ const EventDetails = styled.div`
   }
   
   .detail-label {
-    width: 120px;
+    min-width: 120px;
     font-weight: bold;
     color: ${({ theme }) => theme.colors.primary};
     display: flex;
@@ -106,6 +108,8 @@ const EventDetails = styled.div`
   .detail-value {
     flex: 1;
     color: ${({ theme }) => theme.colors.textPrimary};
+    word-break: break-word;
+    min-width: 200px;
   }
 `;
 
@@ -208,7 +212,7 @@ const events = [
       thirdRunnerUp: '10,000 BDT'
     },
     registration: {
-      deadline: 'July 10, 2025 - 11:59 PM',
+      deadline: 'July 15, 2025 - 11:59 AM',
       fee: 'BDT 2500'
     },
     teamComposition: {

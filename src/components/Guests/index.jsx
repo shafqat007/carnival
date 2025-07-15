@@ -21,6 +21,8 @@ const GuestCard = styled(motion.div)`
   overflow: hidden;
   box-shadow: 0 8px 25px ${({ theme }) => theme.colors.shadow};
   transition: all 0.3s ease;
+  max-width: 350px;
+  margin: 0 auto;
 
   &:hover {
     transform: translateY(-6px);
@@ -30,12 +32,14 @@ const GuestCard = styled(motion.div)`
 
 const GuestImage = styled.div`
   width: 100%;
-  height: 200px;
+  height: 300px;
   background: ${({ theme }) => theme.gradients.primary};
   background-image: url(${props => props.src});
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
   transition: transform 0.3s ease;
+  border-bottom: 2px solid ${({ theme }) => theme.colors.border};
 
   ${GuestCard}:hover & {
     transform: scale(1.05);
@@ -67,7 +71,8 @@ const GuestRole = styled.p`
 
 // Dynamic image imports
 const guestImages = {
-  ariful: new URL('/src/assets/images/l60Hf.png', import.meta.url).href,
+  ariful: new URL('/src/assets/g2.jpg', import.meta.url).href,
+  raqueeb: new URL('/src/assets/g1.jpg', import.meta.url).href,
 };
 
 // Default placeholder for any missing images
@@ -75,6 +80,12 @@ const placeholderImage = "https://via.placeholder.com/300x200/f78620/ffffff?text
 
 // Guest data
 const guestMembers = [
+  {
+    name: "Raqueeb Kader Chowdhury",
+    role: "CEO, Southern IoT Limited",
+    image: guestImages.raqueeb,
+    imageKey: "raqueeb"
+  },
   {
     name: "Md. Ariful Islam",
     role: "CTO & Head of R&D, Southern IOT",
@@ -100,7 +111,7 @@ const Guests = () => {
         backgroundClip: 'text',
         fontSize: 'clamp(2rem, 4vw, 3rem)'
       }}>
-        Distinguished Guest
+        Distinguished Guests
       </h2>
       <GuestGrid>
         {guestMembers.map((guest, index) => (

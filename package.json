@@ -12,7 +12,7 @@
   "dependencies": {
     "@react-three/drei": "^10.4.2",
     "@react-three/fiber": "^9.1.4",
-    "framer-motion": "^12.22.0",
+    "framer-motion": "^12.23.0",
     "gsap": "^3.13.0",
     "react": "^19.1.0",
     "react-countup": "^6.5.3",

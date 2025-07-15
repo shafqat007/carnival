@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 // Dynamic image import
 const sponsorImages = {
-  southern: new URL('/src/assets/images/southern.jpg', import.meta.url).href,
+  southern: new URL('/src/assets/images/southern.png', import.meta.url).href,
 };
 
 const SponsorsSection = styled.section`
@@ -50,17 +50,22 @@ const SponsorTitle = styled.h3`
 `;
 
 const SponsorLogo = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   margin: 2rem auto;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 8px 25px ${({ theme }) => theme.colors.shadow};
+  background: white;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.3s ease;
   }
   

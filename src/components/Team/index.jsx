@@ -78,7 +78,7 @@ const teamStructure = {
   },
   media: {
     title: "Media Coverage Team",
-    coLead: "Manzur Rahman",
+    coLead: "Mizanur Rahman",
     members: ["Manjur-E-Lahi", "Tariqul Islam Rhidoy"]
   },
   finance: {

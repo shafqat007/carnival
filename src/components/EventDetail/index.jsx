@@ -211,9 +211,10 @@ const events = [
       secondRunnerUp: '20,000 BDT',
       thirdRunnerUp: '10,000 BDT'
     },
-    registration: {
+    registration: {}
       deadline: 'July 15, 2025 - 11:59 AM',
       fee: 'BDT 2500'
+      
     },
     teamComposition: {
       hardwareSpecialist: 'Circuit design, Microcontroller programming, Simulation',
